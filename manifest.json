@@ -1,0 +1,21 @@
+{
+  "name": "テンプルトン賞クイズ",
+  "short_name": "テンプルトンクイズ",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f4f4f9",
+  "theme_color": "#007bff",
+  "description": "テンプルトン賞の日本人受賞者を覚えるためのクイズアプリです。",
+  "icons": [
+    {
+      "src": "icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
