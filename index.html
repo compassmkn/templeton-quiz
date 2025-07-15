@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テンプルトン賞日本人受賞者クイズ</title>
+    
+    <meta name="theme-color" content="#007bff"/>
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div id="start-screen" class="screen active">
+            <h1>テンプルトン賞日本人受賞者を全員覚えよう！</h1>
+            <button id="start-button">はじめる</button>
+        </div>
+
+        <div id="quiz-screen" class="screen">
+            <h2>テンプルトン賞日本人受賞者として正しいのはどちら？</h2>
+            <button class="choice-button" data-answer="A">A. 庭野日敬</button>
+            <button class="choice-button" data-answer="B">B. 池田大作</button>
+        </div>
+
+        <div id="result-screen" class="screen">
+            <p id="result-text"></p>
+            <div class="button-group">
+                <button id="restart-button">もう一度</button>
+                <button id="explanation-button">解説をみる</button>
+            </div>
+        </div>
+        
+        <div id="explanation-screen" class="screen">
+            <h2>解説</h2>
+            <p id="explanation-text"></p>
+            <button id="back-button">トップに戻る</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                    })
+                    .catch(err => {
+                        console.log('ServiceWorker registration failed: ', err);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>
