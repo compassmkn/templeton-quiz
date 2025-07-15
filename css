@@ -1,0 +1,121 @@
+/* 基本設定 */
+body {
+    font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+/* コンテナ */
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+/* 画面の表示・非表示 */
+.screen {
+    display: none;
+}
+.screen.active {
+    display: block;
+}
+
+/* テキスト */
+h1 {
+    font-size: 1.8rem;
+    color: #333;
+}
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+#result-text {
+    font-size: 1.6rem;
+    font-weight: bold;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+/* 解説テキストのスタイル */
+#explanation-text {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 2rem;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+
+/* ボタン */
+button {
+    padding: 15px;
+    font-size: 1.2rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.choice-button {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #007bff;
+}
+.choice-button:hover {
+    background-color: #0056b3;
+}
+
+/* 結果画面のボタングループ */
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+.button-group button {
+    flex: 1; /* ボタンを均等幅にする */
+}
+
+#start-button {
+    width: 100%;
+    background-color: #007bff;
+}
+#start-button:hover {
+    background-color: #0056b3;
+}
+
+#restart-button {
+    background-color: #6c757d;
+}
+#restart-button:hover {
+    background-color: #5a6268;
+}
+
+#explanation-button {
+    background-color: #17a2b8;
+}
+#explanation-button:hover {
+    background-color: #138496;
+}
+
+#back-button {
+    width: 100%;
+    background-color: #6c757d;
+}
+#back-button:hover {
+    background-color: #5a6268;
+}
